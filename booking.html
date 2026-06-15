@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now | Bandhan Party Plot - Reserve Your Event Date</title>
+  <meta name="description" content="Book your event at Bandhan Party Plot online. Fill in your details and our team will confirm your booking within 24 hours. Easy online booking system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎪</text></svg>" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Bandhan <span>Party Plot</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="nav-cta active">Book Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="booking.html">📅 Book Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1>Book Your Date</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span><span>Book Now</span>
+    </div>
+  </div>
+</div>
+
+<section class="booking-page section-padding">
+  <div class="container">
+    <div class="booking-layout">
+
+      <!-- Booking Form -->
+      <div class="booking-form-card">
+        <h2>Request a Booking</h2>
+        <p>Fill in the details below and our team will confirm your booking within 24 hours.</p>
+
+        <div class="success-message" id="bookingSuccess"></div>
+        <div class="error-message" id="bookingError"></div>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-group">
+            <label>Customer Name <span>*</span></label>
+            <input type="text" id="customerName" class="form-control" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label>Mobile Number <span>*</span></label>
+            <input type="tel" id="mobileNumber" class="form-control" placeholder="Enter 10-digit mobile number" maxlength="10" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Event Type <span>*</span></label>
+              <select id="eventType" class="form-control" required>
+                <option value="">— Select Event Type —</option>
+                <option value="Wedding">💍 Wedding</option>
+                <option value="Reception">🥂 Reception</option>
+                <option value="Engagement">💎 Engagement</option>
+                <option value="Birthday Party">🎂 Birthday Party</option>
+                <option value="Anniversary">❤️ Anniversary</option>
+                <option value="Corporate Event">🏢 Corporate Event</option>
+                <option value="Cultural Program">🎭 Cultural Program</option>
+                <option value="Family Gathering">👨‍👩‍👧‍👦 Family Gathering</option>
+                <option value="Puja / Religious Event">🕌 Puja / Religious Event</option>
+                <option value="Other">📋 Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Event Date <span>*</span></label>
+              <input type="date" id="eventDate" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Expected Number of Guests <span>*</span></label>
+            <select id="numGuests" class="form-control" required>
+              <option value="">— Select Guest Count —</option>
+              <option value="50-100">50 – 100 Guests</option>
+              <option value="100-200">100 – 200 Guests</option>
+              <option value="200-350">200 – 350 Guests</option>
+              <option value="350-500">350 – 500 Guests</option>
+              <option value="500-750">500 – 750 Guests</option>
+              <option value="750-1000">750 – 1,000 Guests</option>
+              <option value="1000-1500">1,000 – 1,500 Guests</option>
+              <option value="1500+">1,500+ Guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Additional Notes / Special Requirements</label>
+            <textarea id="notes" class="form-control" placeholder="Tell us about any special requirements, decoration preferences, catering needs, or specific arrangements you'd like..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn">
+            📅 Submit Booking Request
+          </button>
+
+          <p style="text-align:center;margin-top:15px;font-size:0.82rem;color:var(--gray);">
+            By submitting, you agree to our booking terms. Our team will call you within 24 hours to confirm.
+          </p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="booking-sidebar">
+        <div class="sidebar-card">
+          <h3>📞 Contact Us Directly</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">📱</span>
+            <div>
+              <strong>Primary Number</strong>
+              <span>+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">📱</span>
+            <div>
+              <strong>Secondary Number</strong>
+              <span>+91 87654 32109</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <span>info@bandhanpartyplot.com</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">🕐</span>
+            <div>
+              <strong>Office Hours</strong>
+              <span>Monday – Sunday: 9 AM to 9 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>✅ Venue Amenities</h3>
+          <div class="amenities-list">
+            <div class="amenity-item"><div class="amenity-check">✓</div>Air-Conditioned Hall</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>Free Parking (500+ cars)</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>In-House Catering</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>Professional Decoration</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>Sound System & DJ</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>LED Stage Lighting</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>Bridal Suite</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>Event Coordinator</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>Power Backup</div>
+            <div class="amenity-item"><div class="amenity-check">✓</div>CCTV Security</div>
+          </div>
+        </div>
+
+        <div class="sidebar-card" style="background:linear-gradient(135deg,var(--maroon),var(--maroon-dark));color:var(--white);">
+          <h3 style="color:var(--gold-light);">📍 Find Us Here</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;line-height:1.7;">
+            Near Highway, Opposite City Mall,<br>
+            Gujarat – 382010<br><br>
+            <strong style="color:var(--gold);">Landmark:</strong> Next to Petrol Pump, City Entry Road
+          </p>
+          <a href="contact.html" style="display:inline-block;margin-top:15px;color:var(--gold-light);font-size:0.9rem;text-decoration:underline;">View on Map →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Questions Before Booking?</h2>
+    <p>Our friendly team is happy to answer all your queries and help you plan your perfect event!</p>
+    <a href="contact.html" class="btn btn-lg">💬 Talk to Our Team</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Bandhan <span>Party Plot</span></a>
+          <p>Gujarat's premier event destination for weddings, receptions, and celebrations.</p>
+          <div class="footer-social">
+            <a href="#">📘</a><a href="#">📸</a><a href="#">💬</a><a href="#">▶️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Wedding Ceremonies</a></li>
+            <li><a href="services.html">Receptions</a></li>
+            <li><a href="services.html">Birthday Parties</a></li>
+            <li><a href="services.html">Corporate Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-item"><span>📍</span><span>Near Highway, Gujarat - 382010</span></div>
+          <div class="footer-contact-item"><span>📞</span><span>+91 98765 43210</span></div>
+          <div class="footer-contact-item"><span>📧</span><span>info@bandhanpartyplot.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <span>© 2024 Bandhan Party Plot. All Rights Reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a><a href="admin.html">Admin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
