@@ -7,7 +7,7 @@
 // This file only renders the UI and wires up interactions.
 // =========================================================
 
-const ADMIN_PASSCODE = 'bandhan123'; // change before going live
+const ADMIN_PASSCODE = 'bandhan321'; // change before going live
 
 let viewYear, viewMonth;        // calendar month currently shown (0-indexed month)
 let selectedDate = null;        // 'YYYY-MM-DD' selected by the customer
